@@ -17,6 +17,7 @@ git clone https://github.com/verize/docker-pymongo-vue.git docker-pymongo-vue
 cd docker-pymongo-vue
 ```
 2. Add Python Virtual Environment and install dependencies (For development purposes)
+cd python
 ```
 virtualenv venv
 . venv/bin/activate
@@ -31,6 +32,7 @@ pip-upgrade
 ```
 
 3. Install client js dependencies, compile assets:
+cd python/app/
 ```
 yarn install && yarn upgrade
 yarn run dev
