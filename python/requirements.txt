@@ -1,7 +1,7 @@
 python-dotenv
 flask>=1.0.0
 eve>=0.8
-pymongo==3.5.1
+pymongo==3.10.1
 mongoengine
 flask-mongoengine
 flask-debugtoolbar
