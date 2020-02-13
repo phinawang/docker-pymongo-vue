@@ -32,6 +32,7 @@ RUN rm -rf /var/cache/apk/* && rm -rf /tmp/*
 RUN addgroup -S www-data && adduser -S -G www-data www-data 
 
 # install uwsgi now because it takes a little while
+RUN pip3 install --upgrade pip
 RUN pip3 install uwsgi
 
 # COPY requirements.txt and RUN pip install BEFORE adding the rest of your code, this will cause Docker's caching mechanism
